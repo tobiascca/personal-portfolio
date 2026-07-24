@@ -7,9 +7,15 @@
 }
 
 body {
-  background: #0f172a;
+  background:
+    radial-gradient(circle at 1px 1px, rgba(148, 163, 184, 0.15) 1px, transparent 0) 0 0 / 28px 28px,
+    #0f172a;
   color: #e5e7eb;
   line-height: 1.6;
+}
+
+code, .mono {
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
 }
 
 /* Navigation */
@@ -46,13 +52,22 @@ nav a:hover {
 /* Hero */
 .hero {
   text-align: center;
-  padding: 6rem 2rem;
+  padding: 4rem 2rem 2rem;
   background: linear-gradient(180deg, #020617, #0f172a);
+}
+
+.hero-eyebrow {
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: #38bdf8;
+  margin-bottom: 1rem;
 }
 
 .hero h2 {
   font-size: 4.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 
 .hero p {
@@ -64,14 +79,80 @@ nav a:hover {
 section {
   max-width: 1000px;
   margin: auto;
-  padding: 4rem 2rem;
+  padding: 2rem 2rem;
 }
 
 section h2 {
   font-size: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   border-left: 4px solid #38bdf8;
   padding-left: 1rem;
+}
+
+/* About */
+.about-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.about-meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  background: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 8px;
+  padding: 0.9rem 1.25rem;
+  min-width: 160px;
+}
+
+.about-meta-label {
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #38bdf8;
+}
+
+.about-meta-value {
+  color: #e5e7eb;
+  font-size: 0.95rem;
+}
+
+/* Contact Section Container */
+#contact-section {
+  text-align: center;
+  padding: 5px;
+}
+
+/* Flexbox row for the mini blocks */
+.mini-contact-blocks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap; /* Allows wrapping only if viewed on very small screens */
+}
+
+/* Mini Block Styling */
+.mini-block {
+  background-color: #0b55a3;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 16px; /* Adjusted padding for a more compact look */
+  border-radius: 20px; /* Gives a nice, modern pill shape */
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+/* Hover Effect */
+.mini-block:hover {
+  background-color: #007bff; /* Turns blue on hover */
+  transform: translateY(-2px); /* Slight lift */
 }
 
 /* Projects */
@@ -108,21 +189,76 @@ section h2 {
   font-weight: 500;
 }
 
-/*
-.tag {
+.status-tag {
   display: inline-block;
-  background: #1e293b;
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  font-size: 0.7rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
   color: #38bdf8;
-  padding: 0.3rem 0.7rem;
+  border: 1px solid #38bdf8;
   border-radius: 999px;
-  font-size: 0.8rem;
-  margin-right: 0.5rem;
+  padding: 0.15rem 0.6rem;
+  vertical-align: middle;
+  margin-left: 0.6rem;
 }
-*/
+
+/* Coursework */
+.coursework-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.coursework-list li {
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  font-size: 0.9rem;
+  color: #cbd5e1;
+  background: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.coursework-list li:hover {
+  border-color: #38bdf8;
+  color: #38bdf8;
+}
 
 /* Footer */
 footer {
   text-align: center;
   padding: 2rem;
   color: #64748b;
+}
+
+footer a {
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  color: #38bdf8;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin-top: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .hero h2 {
+    font-size: 2.75rem;
+  }
+
+  nav {
+    padding: 1.25rem 1.5rem;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  nav ul {
+    gap: 1.25rem;
+  }
 }
