@@ -175,7 +175,7 @@ time, td, .result { font-variant-numeric: tabular-nums lining-nums; }
 /* ---------- Opening ---------- */
 .opening {
   display: grid;
-  grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
   grid-template-rows: auto auto auto 1fr;
   grid-template-areas:
     "name fig"
@@ -192,7 +192,7 @@ time, td, .result { font-variant-numeric: tabular-nums lining-nums; }
   list-style: none; padding: 0;
   display: flex; flex-wrap: wrap; gap: 0.15rem 0.75em;
   margin-top: var(--s-4);
-  font-size: var(--t-lead);
+  font-size: 1.125rem;
   color: var(--ink-dim);
 }
 .opening__keys li:not(:last-child)::after { content: "·"; margin-left: 0.75em; color: var(--rule-strong); }
@@ -218,7 +218,7 @@ time, td, .result { font-variant-numeric: tabular-nums lining-nums; }
   margin-bottom: var(--s-4);
 }
 .opening__actions { margin-top: calc(var(--s-5) + 0.4rem); }
-.opening__fig .fig__media { aspect-ratio: 760 / 568; }
+.opening__fig .fig__media { aspect-ratio: 1022 / 380; }
 
 /* ---------- Email + links ---------- */
 .email { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-2) var(--s-4); }

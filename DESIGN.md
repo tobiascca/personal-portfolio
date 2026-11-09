@@ -183,7 +183,7 @@ A near-monochrome graphite and paper palette with two meaning colours lifted fro
 
 A single centred column of chapters inside a 1240px wrap with a fluid gutter (1rem to 3rem). The masthead is sticky (4rem; 3.5rem on phones) and anchors offset by masthead height plus 1rem.
 
-- **Opening:** a 5fr / 6fr grid. Text on the left (name, keyword line, lede, status, email with Copy, link row); Fig. 1 on the right at a 4:3 frame (the lane-overlay camera view), vertically centred. Under 1000px the order becomes name, keywords, lede, Fig. 1, actions.
+- **Opening:** a 5fr / 7fr grid. Text on the left (name, keyword line, lede, status, email with Copy, link row); Fig. 1 on the right at its 1022:380 frame (edges and lane-overlay views side by side), vertically centred. Under 1000px the order becomes name, keywords, lede, Fig. 1, actions.
 - **Chapters:** 7rem top padding (4.5rem under 1000px); the title, a 1rem gap, a hairline rule, then 3rem (2rem on phones) before content.
 - **Experience:** 5fr text / 7fr figure; Fig. 2 is sticky beside the text on desktop and static when stacked.
 - **Work:** each piece alternates 7fr figure / 5fr text and its mirror, vertically centred, 4.5rem between pieces. A piece without media is text only, max 44rem.
