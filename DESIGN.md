@@ -218,6 +218,12 @@ An inline SVG plot of the strongest result. Hairline grid, sans axis labels in D
 - **Data disclosure:** "Show the numbers" sits under the caption as an underlined summary and opens a plain table with hairline row rules (max 28rem).
 - **Phones:** axis text 24 and values 34 / 24 in SVG units so they stay readable when scaled down.
 
+### Screenshot slider (Fig. 4)
+A figure whose media is a horizontal scroll-snap strip of phone screenshots (one per view, 1.75rem corners). Below it: previous and next buttons (2.75rem square, 1px Ink Faint border, 2px corners, drawn chevrons) around a tabular "n / total" counter, then the figure caption, which changes per slide from each slide's own caption. Keyboard: arrow keys, Home and End on the focused strip. New slides (e.g. Apple Watch screens) are added as items; the counter and buttons adapt. Slides move instantly under reduced motion.
+
+### Figure videos
+Every figure video plays muted on a loop, with "Live, looping" and a Pause control in its caption (the dot is ink, grey when paused). Videos pause while off screen and resume when back in view, unless the visitor paused them. In Work, text sits on the left and the figure on the right; on phones the figure comes first.
+
 ### Navigation (masthead)
 Sticky, Graphite Ground, hairline bottom rule. The name sits left in serif 600 at 1.25rem. Section links are label-size Dim Ink, 2rem apart, 2.75rem tall; hover and the current section go to Paper Ink, and the current section gets a 2px inset underline. Under 680px the links are replaced by a single Paper Ink "Contact" link.
 

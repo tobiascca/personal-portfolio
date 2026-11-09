@@ -352,8 +352,39 @@ time, td, .result { font-variant-numeric: tabular-nums lining-nums; }
 .piece--flip .piece__fig { order: 2; }
 .piece__fig video { aspect-ratio: 4 / 3; object-fit: cover; }
 .piece__fig--phone { justify-self: center; width: min(100%, 17rem); }
-.piece__fig--phone img { border-radius: 1.75rem; background: #0b0c12; }
-.piece__fig--phone .fig__caption { max-width: 17rem; }
+.piece__fig--phone .fig__caption { max-width: 17rem; min-height: 4.4em; }
+
+/* Screenshot slider */
+.slider__viewport {
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  border-radius: 1.75rem;
+}
+.slider__viewport::-webkit-scrollbar { display: none; }
+.slider__viewport:focus-visible { outline-offset: 4px; border-radius: 1.75rem; }
+.slider__track { list-style: none; padding: 0; margin: 0; display: flex; }
+.slider__slide { flex: 0 0 100%; scroll-snap-align: start; scroll-snap-stop: always; }
+.slider__slide img { width: 100%; height: auto; aspect-ratio: 598 / 1300; border-radius: 1.75rem; background: #0b0c12; }
+.slider__slide--watch { display: flex; align-items: center; justify-content: center; aspect-ratio: 598 / 1300; }
+.slider__slide--watch img { width: 86%; aspect-ratio: 345 / 420; border-radius: 14% / 11.5%; }
+.fig__note { color: var(--ink-faint); }
+.slider__controls {
+  display: flex; align-items: center; justify-content: space-between; gap: var(--s-3);
+  margin-top: var(--s-3);
+}
+.slider__btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 2.75rem; height: 2.75rem;
+  background: none; border: 1px solid var(--ink-faint); border-radius: 2px;
+  color: var(--ink); cursor: pointer;
+  transition: border-color 0.2s var(--ease), opacity 0.2s var(--ease);
+}
+.slider__btn svg { width: 1.1rem; height: 1.1rem; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.slider__btn:hover:not(:disabled) { border-color: var(--ink); }
+.slider__btn:disabled { opacity: 0.35; cursor: default; }
+.slider__count { font-size: var(--t-small); color: var(--ink-dim); font-variant-numeric: tabular-nums; }
 
 .piece__text h3 { font-size: var(--t-h3); letter-spacing: -0.01em; }
 .piece__meta { margin-top: var(--s-2); font-size: var(--t-small); color: var(--ink-dim); }

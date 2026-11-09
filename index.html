@@ -158,14 +158,19 @@
     <section class="chapter wrap" id="work" aria-labelledby="work-title">
       <h2 class="chapter__title" id="work-title">Work</h2>
 
-      <article class="piece">
+      <article class="piece piece--flip">
         <figure class="fig piece__fig">
-          <video class="fig__media js-inview" muted loop playsinline preload="none"
+          <video class="fig__media js-always" autoplay muted loop playsinline preload="metadata"
                  poster="assets/media/driving-track.webp" width="720" height="540"
                  aria-label="The small robot car following a taped lane on the floor on its own">
             <source src="assets/media/driving-track.mp4" type="video/mp4">
           </video>
-          <figcaption class="fig__caption"><span><b class="fig__num">Fig. 3</b> The car driving itself down a test lane.</span></figcaption>
+          <figcaption class="fig__caption">
+            <span><b class="fig__num">Fig. 3</b> The car driving itself down a test lane.</span>
+            <button class="fig__state js-toggle" type="button" aria-pressed="false">
+              <span class="fig__dot" aria-hidden="true"></span><span class="js-state">Live, looping</span><span class="fig__action js-action">Pause</span>
+            </button>
+          </figcaption>
         </figure>
         <div class="piece__text">
           <h3>Vision-based autonomous driving</h3>
@@ -177,16 +182,48 @@
       </article>
 
       <article class="piece piece--flip">
-        <figure class="fig piece__fig piece__fig--phone">
-          <img class="fig__media" src="assets/media/nightly-session-detail.webp" width="800" height="1740" loading="lazy" decoding="async"
-               alt="Nightly's session screen: a night's sounds plotted on a timeline, with recordings listed below">
-          <figcaption class="fig__caption"><span><b class="fig__num">Fig. 4</b> One night in Nightly: every sound placed on a timeline.</span></figcaption>
+        <figure class="fig piece__fig piece__fig--phone slider js-slider">
+          <div class="slider__viewport" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Nightly screenshots. Use the arrow keys to move between them.">
+            <!-- Add or reorder slider__slide items here; the counter and buttons adapt. -->
+            <ol class="slider__track">
+              <li class="slider__slide" aria-roledescription="slide" aria-label="1 of 8: Tonight" data-caption="Tonight: tap the moon at bedtime; last night is summed up in one sentence.">
+                <img src="assets/media/nightly-tonight.webp" width="598" height="1300" decoding="async" alt="Nightly's Tonight screen: a glowing moon button to start the night, bed and wake times, and last night's summary with a timeline">
+              </li>
+              <li class="slider__slide" aria-roledescription="slide" aria-label="2 of 8: Nights" data-caption="Nights: every night with its length, score and the sounds it caught.">
+                <img src="assets/media/nightly-nights.webp" width="598" height="1300" loading="lazy" decoding="async" alt="Nights screen listing each night with its duration, score and a small timeline of sounds">
+              </li>
+              <li class="slider__slide" aria-roledescription="slide" aria-label="3 of 8: Morning report" data-caption="Morning report: the score broken down, sleep stages from the Watch, and how you feel.">
+                <img src="assets/media/nightly-report.webp" width="598" height="1300" loading="lazy" decoding="async" alt="Morning report with a score of 75 split into duration, calm, regular bedtime and deep plus REM, a sleep stages bar, and a how-do-you-feel check-in">
+              </li>
+              <li class="slider__slide" aria-roledescription="slide" aria-label="4 of 8: Coach" data-caption="Coach: ask about your own nights; the answers are generated on the phone.">
+                <img src="assets/media/nightly-coach.webp" width="598" height="1300" loading="lazy" decoding="async" alt="Coach screen with the question 'Why do I talk in my sleep?', a short answer based on the last seven nights, and suggested questions">
+              </li>
+              <li class="slider__slide" aria-roledescription="slide" aria-label="5 of 8: Sky" data-caption="Sky: constellations light up star by star as your habits improve.">
+                <img src="assets/media/nightly-sky.webp" width="598" height="1300" loading="lazy" decoding="async" alt="Sky screen showing constellations such as Lyra, Cygnus and Andromeda with some stars lit">
+              </li>
+              <li class="slider__slide slider__slide--watch" aria-roledescription="slide" aria-label="6 of 8: Apple Watch: start" data-caption="Apple Watch: start the night from your wrist, with a smart alarm before your wake time.">
+                <img src="assets/media/nightly-watch-ready.webp" width="345" height="420" loading="lazy" decoding="async" alt="Apple Watch screen showing last night's time and score and a Start night button">
+              </li>
+              <li class="slider__slide slider__slide--watch" aria-roledescription="slide" aria-label="7 of 8: Apple Watch: asleep" data-caption="Apple Watch: during the night it tracks movement and heart rate.">
+                <img src="assets/media/nightly-watch-sleeping.webp" width="345" height="420" loading="lazy" decoding="async" alt="Apple Watch screen during the night showing elapsed time, the wake-by time and an End night button">
+              </li>
+              <li class="slider__slide slider__slide--watch" aria-roledescription="slide" aria-label="8 of 8: Apple Watch: morning" data-caption="Apple Watch: in the morning it hands the full report to the iPhone.">
+                <img src="assets/media/nightly-watch-morning.webp" width="345" height="420" loading="lazy" decoding="async" alt="Apple Watch morning screen saying the full report is on your iPhone, with a Done button">
+              </li>
+            </ol>
+          </div>
+          <div class="slider__controls">
+            <button class="slider__btn js-prev" type="button" aria-label="Previous screenshot"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15 5l-7 7 7 7"/></svg></button>
+            <span class="slider__count js-count" aria-live="polite">1 / 8</span>
+            <button class="slider__btn js-next" type="button" aria-label="Next screenshot"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7"/></svg></button>
+          </div>
+          <figcaption class="fig__caption"><span><b class="fig__num">Fig. 4</b> <span class="js-caption">Tonight: tap the moon at bedtime; last night is summed up in one sentence.</span> <span class="fig__note">Demo data.</span></span></figcaption>
         </figure>
         <div class="piece__text">
-          <h3>Nightly, a private sleep analyzer</h3>
-          <p class="piece__meta">iOS app · <time datetime="2026-07">2026</time> · in progress</p>
-          <p>An iPhone app that listens while you sleep and keeps a clip only when there’s sound. It transcribes speech on the phone, labels each clip as talking, snoring or noise, and syncs the night to Apple Health. Nothing leaves the device.</p>
-          <ul class="tools" aria-label="Tools used"><li>Swift</li><li>SwiftUI</li><li>SwiftData</li><li>Speech</li><li>HealthKit</li></ul>
+          <h3>Nightly, a private sleep companion</h3>
+          <p class="piece__meta">iPhone and Apple Watch app · <time datetime="2026-07">2026</time> · in progress</p>
+          <p>I wanted to keep track of my sleep, so I built an app for iPhone and Apple Watch. The iPhone listens through the night and keeps a clip only when there’s sound, transcribing any sleep talk on the phone. The Watch adds movement, heart rate, estimated sleep stages and a smart alarm. A coach that runs on the device answers questions about your own nights. Nothing leaves your devices.</p>
+          <ul class="tools" aria-label="Tools used"><li>Swift</li><li>SwiftUI</li><li>watchOS</li><li>SwiftData</li><li>HealthKit</li><li>Core Motion</li><li>Foundation Models</li></ul>
           <a class="more" href="https://github.com/tobiascca/nightly-AI-sleep-analyzer-app">View on GitHub</a>
         </div>
       </article>
