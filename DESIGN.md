@@ -183,7 +183,7 @@ A near-monochrome graphite and paper palette with two meaning colours lifted fro
 
 A single centred column of chapters inside a 1240px wrap with a fluid gutter (1rem to 3rem). The masthead is sticky (4rem; 3.5rem on phones) and anchors offset by masthead height plus 1rem.
 
-- **Opening:** a 7fr / 5fr grid. The name spans both columns; the lede sits left and the actions (status line, email with Copy, link row) sit right; Fig. 1 spans the full width beneath at a 1022:380 frame so it stays inside a 1440×900 first viewport. Under 1000px the order becomes name, lede, Fig. 1, actions.
+- **Opening:** a 5fr / 6fr grid. Text on the left (name, keyword line, lede, status, email with Copy, link row); Fig. 1 on the right at a 4:3 frame (the lane-overlay camera view), vertically centred. Under 1000px the order becomes name, keywords, lede, Fig. 1, actions.
 - **Chapters:** 7rem top padding (4.5rem under 1000px); the title, a 1rem gap, a hairline rule, then 3rem (2rem on phones) before content.
 - **Experience:** 5fr text / 7fr figure; Fig. 2 is sticky beside the text on desktop and static when stacked.
 - **Work:** each piece alternates 7fr figure / 5fr text and its mirror, vertically centred, 4.5rem between pieces. A piece without media is text only, max 44rem.
@@ -208,8 +208,8 @@ Square by default: media frames, rules, tables and controls have no radius. Two 
 ### Figure (signature)
 The core device. Media sits bare, full width of its column, on a Media Black letterbox; the caption sits 0.75rem below.
 - **Caption:** serif, Dim Ink, max 68ch, opening with a bold Paper Ink "Fig. N". Numbers run in reading order across the page.
-- **Lead figure (Fig. 1):** caption spans the full width and carries a state control on the right: a dot, "Live, looping" / "Paused", and an underlined "Pause" / "Play" action, 2.75rem tall. On phones the control drops under the caption text.
-- **Video behaviour:** Fig. 1 always plays (muted, looping) and is paused only by its control. Other figure videos play only while 35% on screen and show native controls under reduced motion.
+- **Lead figure (Fig. 1):** the caption carries a state control on the right: a dot, "Live, looping" / "Paused", and an underlined "Pause" / "Play" action, 2.75rem tall. On phones the control drops under the caption text.
+- **Video behaviour:** figure videos always play (muted, looping) with a Pause control in the caption; they pause while off screen and resume when back, unless paused by hand.
 - **Phone screenshots:** centred, max 17rem wide (18rem stacked), device radius, caption width matched to the image.
 
 ### Results Chart (Fig. 2)
@@ -250,7 +250,7 @@ A small text button beside the email address (2.5rem tall, 1px Ink Faint border,
 - **Do** rank content by size and the three ink steps (Paper, Dim, Faint) on the single graphite ground.
 - **Do** separate chapters with a 1px hairline under a serif headline.
 - **Do** keep every interactive target at least 2.75rem tall and give every element the 2px Paper Ink focus ring.
-- **Do** honour reduced motion everywhere except Fig. 1, which keeps playing behind its visible pause control.
+- **Do** honour reduced motion everywhere except figure videos, which keep playing behind their visible pause control.
 
 ### Don't:
 - **Don't** put content in cards, panels, tinted sections or anything with a shadow.
