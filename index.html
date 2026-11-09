@@ -1,117 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Tobias Anuf | Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tobias Anuf | Data Science, Machine Learning &amp; Cybersecurity</title>
+  <meta name="description" content="Tobias Anuf works with data and machine learning and is learning cybersecurity. Final-year Information Engineering student in Asunción, Paraguay, open to remote or hybrid roles.">
+  <meta name="theme-color" content="#121318">
+  <link rel="canonical" href="https://tobiascca.github.io/personal-portfolio/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Tobias Anuf | Data Science, Machine Learning &amp; Cybersecurity">
+  <meta property="og:description" content="Data science, machine learning and cybersecurity. Projects, experience and resume.">
+  <meta property="og:url" content="https://tobiascca.github.io/personal-portfolio/">
+  <meta property="og:image" content="https://tobiascca.github.io/personal-portfolio/assets/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preload" href="assets/fonts/stix-two-text-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/atkinson-hyperlegible-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
-    <h1>Tobias Anuf</h1>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#coursework">Coursework</a></li>
-    </ul>
-  </nav>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="hero">
-    <p class="hero-eyebrow">machine learning · computer vision · data science</p>
-    <h2>Hi, I’m Tobias</h2>
-    <p>Computer Science student with international experience and
-      data science training, focused on machine learning and
-      computer vision. <br> Seeking internship or junior remote roles.</p>
+  <header class="masthead">
+    <div class="wrap masthead__inner">
+      <a class="masthead__name" href="#top">Tobias Anuf</a>
+      <nav class="masthead__nav" aria-label="Sections">
+        <a href="#experience">Experience</a>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="masthead__contact" href="#contact">Contact</a>
+    </div>
   </header>
 
-  <section id="contact-section">
-    <div class="mini-contact-blocks">
-      <a href="https://www.linkedin.com/in/tobias-anuf-0003942b2/" target="_blank" class="mini-block">LinkedIn</a>
-      <a href="https://github.com/tobiascca" target="_blank" class="mini-block">GitHub</a>
-      <a href="mailto:tobiasanuf@gmail.com" class="mini-block">tobiasanuf@gmail.com</a>
-      <a href="resume_TobiasAnuf_EN.pdf" target="_blank" class="mini-block">Resume (English)</a>
-      <a href="resume_TobiasAnuf_ES.pdf" target="_blank" class="mini-block">Resume (Spanish)</a>
-    </div>
-  </section>
+  <main id="main">
+    <!-- Opening -->
+    <section class="opening wrap" id="top" aria-labelledby="name">
+      <h1 class="opening__name" id="name">Tobias Anuf</h1>
+      <ul class="opening__keys" aria-label="Fields">
+        <li>Data Science</li><li>Machine Learning</li><li>Cybersecurity</li><li>Computer Vision</li>
+      </ul>
+      <p class="opening__lede">I work with data and machine learning, and I’m learning cybersecurity.</p>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I'm an Information Engineering student at Universidad Politécnica Taiwan-Paraguay. I'm a student 
-      who came back from a year and a half exchange at National Taiwan University of Science and Technology, 
-      now based in Asunción, Paraguay.
-      I work with C, C++, Java and Python; building data systems and ML pipelines. 
-      My work bridges hardware and software, with a strong focus on embedded systems like the Raspberry Pi, Wio Terminal and NVIDIA Jetson Nano, 
-      as well as machine learning using Python and PyTorch. I developed a Vision-based Autonomous Driving System for my 
-      capstone project, and I'm passionate about building complex, data-driven technical solutions from the ground up.
-    </p>
 
-    <div class="about-meta">
-      <div class="about-meta-item">
-        <span class="about-meta-label">Status</span>
-        <span class="about-meta-value">Final-year student</span>
+      <div class="opening__actions">
+        <p class="opening__status">Final-year Information Engineering student in Asunción, Paraguay. Open to remote or hybrid roles.</p>
+        <div class="email">
+          <a class="email__address" href="mailto:tobiasanuf@gmail.com">tobiasanuf@gmail.com</a>
+          <button class="email__copy js-copy" type="button" data-copy="tobiasanuf@gmail.com">Copy</button>
+          <span class="email__note js-copy-note" role="status" aria-live="polite"></span>
+        </div>
+        <p class="links">
+          <a href="resume_TobiasAnuf_EN.pdf">Resume (PDF)</a>
+          <a href="resume_TobiasAnuf_ES.pdf" hreflang="es" lang="es">Currículum (PDF)</a>
+          <a class="links__icon" href="https://github.com/tobiascca"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>GitHub</a>
+          <a class="links__icon" href="https://www.linkedin.com/in/tobias-anuf-0003942b2/"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>LinkedIn</a>
+        </p>
       </div>
-      <div class="about-meta-item">
-        <span class="about-meta-label">Languages</span>
-        <span class="about-meta-value">English, Spanish</span>
+
+      <figure class="fig fig--lead opening__fig">
+        <video class="fig__media js-always" autoplay muted loop playsinline preload="auto"
+               poster="assets/media/fig1-lanes.webp" width="1022" height="380"
+               aria-label="Two camera views from the car: detected edges on the left, the road with lane lines and a steering arrow on the right">
+          <source src="assets/media/fig1-lanes.mp4" type="video/mp4">
+        </video>
+        <figcaption class="fig__caption">
+          <span><b class="fig__num">Fig. 1</b> Lane detection running on the car’s own camera. Detected edges on the left; the lane lines and steering decision on the right.</span>
+          <button class="fig__state js-toggle" type="button" aria-pressed="false">
+            <span class="fig__dot" aria-hidden="true"></span><span class="js-state">Live, looping</span><span class="fig__action js-action">Pause</span>
+          </button>
+        </figcaption>
+      </figure>
+    </section>
+
+    <!-- Experience -->
+    <section class="chapter wrap" id="experience" aria-labelledby="experience-title">
+      <h2 class="chapter__title" id="experience-title">Experience</h2>
+
+      <div class="role">
+        <div class="role__text">
+          <h3 class="role__name">Data Science Intern, Dato Solutions</h3>
+          <p class="role__meta">Research &amp; Development · Asunción · <time datetime="2026-08">Aug</time>–<time datetime="2026-10">Oct 2026</time></p>
+          <p class="role__outcome">
+            Paraguay’s public customs data stopped naming importers in late 2024. I built the model that fills that gap,
+            so the company’s product can show who imports what again.
+          </p>
+          <ul class="role__list">
+            <li>Compared four approaches on more than 26 million customs records. A text-similarity model (TF-IDF with nearest neighbours) more than doubled accuracy over the old hand-written rules.</li>
+            <li>It only publishes a prediction when it is confident: 60% of shipments get one, and <span class="result">86.5%</span> of those are right. Totals were checked against Central Bank statistics.</li>
+            <li>Built the batch pipeline on Amazon Redshift, resumable after interruptions, with data transfers <span class="result">3.6×</span> faster.</li>
+            <li>Wrote an automated test suite for the company’s AI query assistant and fixed the calculation errors it found.</li>
+          </ul>
+          <ul class="tools" aria-label="Tools used">
+            <li>Python</li><li>scikit-learn</li><li>Pandas</li><li>SQL</li><li>Amazon Redshift</li><li>LLMs</li>
+          </ul>
+        </div>
+
+        <figure class="fig fig--chart js-chart">
+          <svg class="chart" viewBox="0 0 640 380" role="img" aria-labelledby="fig2-title fig2-desc">
+            <title id="fig2-title">Accuracy of the internship model against the rule-based baseline</title>
+            <desc id="fig2-desc">Top-1 accuracy rises from 56.6% with 2% of the training data to 65.5% with 20%, against a 29.3% rule-based baseline. Top-5 accuracy reaches 80.2%.</desc>
+            <g class="chart__grid">
+              <line x1="64" x2="620" y1="320" y2="320"/>
+              <line x1="64" x2="620" y1="245" y2="245"/>
+              <line x1="64" x2="620" y1="170" y2="170"/>
+              <line x1="64" x2="620" y1="95" y2="95"/>
+              <line x1="64" x2="620" y1="20" y2="20"/>
+            </g>
+            <g class="chart__axis">
+              <text x="52" y="324" text-anchor="end">0%</text>
+              <text x="52" y="249" text-anchor="end">25%</text>
+              <text x="52" y="174" text-anchor="end">50%</text>
+              <text x="52" y="99" text-anchor="end">75%</text>
+              <text x="52" y="24" text-anchor="end">100%</text>
+              <text x="110" y="350" text-anchor="middle">2%</text>
+              <text x="340" y="350" text-anchor="middle">10%</text>
+              <text x="580" y="350" text-anchor="middle">20%</text>
+              <text x="342" y="376" text-anchor="middle" class="chart__label">Share of past records used for training</text>
+            </g>
+            <g class="chart__base">
+              <line x1="64" x2="620" y1="232" y2="232"/>
+              <text x="616" y="222" text-anchor="end">Rule-based baseline, 29%</text>
+            </g>
+            <g class="chart__result">
+              <polyline class="chart__line chart__line--top5" pathLength="1" points="110,108 340,87 580,79"/>
+              <polyline class="chart__line" pathLength="1" points="110,150 340,130 580,124"/>
+              <circle cx="110" cy="150" r="5"/><circle cx="340" cy="130" r="5"/><circle cx="580" cy="124" r="6"/>
+              <text x="620" y="152" text-anchor="end" class="chart__value">65.5%</text>
+              <text x="96" y="178" text-anchor="start" class="chart__value chart__value--small">56.6%</text>
+              <text x="616" y="62" text-anchor="end" class="chart__value chart__value--small">80.2% in top 5</text>
+            </g>
+          </svg>
+          <figcaption class="fig__caption">
+            <span><b class="fig__num">Fig. 2</b> How often the model’s first guess was the right importer (<span class="result">yellow</span>), against the rules it replaced (<span class="base">blue</span>), as it learned from more history.</span>
+          </figcaption>
+          <details class="data">
+            <summary>Show the numbers</summary>
+            <table>
+              <caption class="visually-hidden">Model accuracy by training data share</caption>
+              <thead><tr><th scope="col">Training data</th><th scope="col">Top-1</th><th scope="col">Top-5</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">2%</th><td>56.6%</td><td>70.8%</td></tr>
+                <tr><th scope="row">10%</th><td>63.5%</td><td>77.8%</td></tr>
+                <tr><th scope="row">20%</th><td>65.5%</td><td>80.2%</td></tr>
+                <tr><th scope="row">Rule-based baseline</th><td>29.3%</td><td>—</td></tr>
+              </tbody>
+            </table>
+          </details>
+        </figure>
       </div>
+    </section>
+
+    <!-- Work -->
+    <section class="chapter wrap" id="work" aria-labelledby="work-title">
+      <h2 class="chapter__title" id="work-title">Work</h2>
+
+      <article class="piece">
+        <figure class="fig piece__fig">
+          <video class="fig__media js-inview" muted loop playsinline preload="none"
+                 poster="assets/media/driving-track.webp" width="720" height="540"
+                 aria-label="The small robot car following a taped lane on the floor on its own">
+            <source src="assets/media/driving-track.mp4" type="video/mp4">
+          </video>
+          <figcaption class="fig__caption"><span><b class="fig__num">Fig. 3</b> The car driving itself down a test lane.</span></figcaption>
+        </figure>
+        <div class="piece__text">
+          <h3>Vision-based autonomous driving</h3>
+          <p class="piece__meta">Capstone project · <time datetime="2025-06">2025</time>–present</p>
+          <p>A Raspberry Pi car that steers itself from its camera. Computer vision finds the lane lines and a controller keeps the car centred between them. A small on-device model spots stop signs and traffic lights and tells the car to slow down or stop.</p>
+          <ul class="tools" aria-label="Tools used"><li>Python</li><li>OpenCV</li><li>TensorFlow Lite</li><li>Raspberry Pi</li></ul>
+          <a class="more" href="https://github.com/tobiascca/Vision-based-Autonomous-Driving-System">Code and write-up</a>
+        </div>
+      </article>
+
+      <article class="piece piece--flip">
+        <figure class="fig piece__fig piece__fig--phone">
+          <img class="fig__media" src="assets/media/nightly-session-detail.webp" width="800" height="1740" loading="lazy" decoding="async"
+               alt="Nightly's session screen: a night's sounds plotted on a timeline, with recordings listed below">
+          <figcaption class="fig__caption"><span><b class="fig__num">Fig. 4</b> One night in Nightly: every sound placed on a timeline.</span></figcaption>
+        </figure>
+        <div class="piece__text">
+          <h3>Nightly, a private sleep analyzer</h3>
+          <p class="piece__meta">iOS app · <time datetime="2026-07">2026</time> · in progress</p>
+          <p>An iPhone app that listens while you sleep and keeps a clip only when there’s sound. It transcribes speech on the phone, labels each clip as talking, snoring or noise, and syncs the night to Apple Health. Nothing leaves the device.</p>
+          <ul class="tools" aria-label="Tools used"><li>Swift</li><li>SwiftUI</li><li>SwiftData</li><li>Speech</li><li>HealthKit</li></ul>
+          <a class="more" href="https://github.com/tobiascca/nightly-AI-sleep-analyzer-app">View on GitHub</a>
+        </div>
+      </article>
+
+      <article class="piece piece--text">
+        <div class="piece__text">
+          <h3>Multiplayer chess played with your hands</h3>
+          <p class="piece__meta">Game · <time datetime="2026-04">2026</time></p>
+          <p>Online 3D chess with no mouse: the webcam follows your thumb as a cursor, and a pinch picks up and places a piece. Hand tracking runs in Python and streams to the Unity game, which keeps two players in sync over the network.</p>
+          <ul class="tools" aria-label="Tools used"><li>Python</li><li>MediaPipe</li><li>OpenCV</li><li>Unity</li><li>C#</li></ul>
+          <a class="more" href="https://github.com/tobiascca/3D-Chess-with-HandTracking">View on GitHub</a>
+        </div>
+      </article>
+    </section>
+
+    <!-- About -->
+    <section class="chapter wrap" id="about" aria-labelledby="about-title">
+      <h2 class="chapter__title" id="about-title">About</h2>
+      <div class="about">
+        <p class="about__lead">
+          I study Information Engineering at Universidad Politécnica Taiwán-Paraguay and spent a year and a half on exchange
+          at National Taiwan University of Science and Technology in Taipei.
+        </p>
+        <p>
+          I like work that crosses hardware and software: small boards like the Raspberry Pi, Jetson Nano and Wio Terminal on
+          one side, machine learning in Python and PyTorch on the other. Most of all I like knowing where every number comes from.
+        </p>
+      </div>
+
+      <div class="background">
+        <div class="background__col">
+          <h3>Skills</h3>
+          <dl class="skills">
+            <dt>Languages</dt><dd>Python, SQL, Java, C/C++, C#, Swift, JavaScript</dd>
+            <dt>Machine learning</dt><dd>scikit-learn, PyTorch, TensorFlow, OpenCV, MediaPipe, Transformers</dd>
+            <dt>Data</dt><dd>Pandas, NumPy, Amazon Redshift, MySQL, MongoDB</dd>
+            <dt>Hardware</dt><dd>Raspberry Pi, NVIDIA Jetson Nano, Wio Terminal</dd>
+            <dt>Spoken</dt><dd>Spanish (native), English (C2)</dd>
+          </dl>
+        </div>
+        <div class="background__col">
+          <h3>Education</h3>
+          <ul class="entries">
+            <li>
+              <span class="entries__name">B.E. Information Engineering</span>
+              <span class="entries__meta">Universidad Politécnica Taiwán-Paraguay · <time datetime="2023-02">2023</time>–present</span>
+            </li>
+            <li>
+              <span class="entries__name">Exchange, three semesters</span>
+              <span class="entries__meta">National Taiwan University of Science and Technology · <time datetime="2025-02">2025</time>–<time datetime="2026-06">2026</time></span>
+              <span class="entries__note">Machine learning and big data, computer vision, data and text mining</span>
+            </li>
+          </ul>
+        </div>
+        <div class="background__col">
+          <h3>Certifications</h3>
+          <ul class="entries">
+            <li>
+              <a class="entries__name" href="https://learn.nvidia.com/certificates?id=1tO0Ys3ITkGJkXM3sgBKrQ">Fundamentals of Deep Learning</a>
+              <span class="entries__meta">NVIDIA Deep Learning Institute · <time datetime="2025-10">Oct 2025</time></span>
+            </li>
+            <li>
+              <a class="entries__name" href="https://learn.nvidia.com/certificates?id=g-2IIRd1RO6ZWcYuaAXLtA">Building LLM Applications with Prompt Engineering</a>
+              <span class="entries__meta">NVIDIA Deep Learning Institute · <time datetime="2025-11">Nov 2025</time></span>
+            </li>
+            <li>
+              <span class="entries__name">Introduction to Data Science</span>
+              <span class="entries__meta">Penguin Academy · <time datetime="2024-08">Aug 2024</time></span>
+            </li>
+          </ul>
+          <a class="more" href="https://www.linkedin.com/in/tobias-anuf-0003942b2/details/certifications/">All on LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="closing" id="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <h2 class="closing__title" id="contact-title">Contact</h2>
+      <p class="closing__text">Asunción, Paraguay (UTC−3). Open to remote or hybrid roles.</p>
+      <div class="email email--large">
+        <a class="email__address" href="mailto:tobiasanuf@gmail.com">tobiasanuf@gmail.com</a>
+        <button class="email__copy js-copy" type="button" data-copy="tobiasanuf@gmail.com">Copy</button>
+        <span class="email__note js-copy-note" role="status" aria-live="polite"></span>
+      </div>
+      <p class="links">
+        <a href="resume_TobiasAnuf_EN.pdf">Resume (PDF)</a>
+        <a href="resume_TobiasAnuf_ES.pdf" hreflang="es" lang="es">Currículum (PDF)</a>
+        <a class="links__icon" href="https://github.com/tobiascca"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>GitHub</a>
+        <a class="links__icon" href="https://www.linkedin.com/in/tobias-anuf-0003942b2/"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>LinkedIn</a>
+      </p>
+      <p class="closing__fine">© 2026 Tobias Anuf</p>
     </div>
-  </section>
-
-<section id="projects">
-  <h2>Projects</h2>
-
-  <div class="project-card">
-    <h3>Capstone Project – Vision-Based Autonomous Driving System</h3>
-    <p>
-      Computer vision system for autonomous driving, covering perception
-      and decision-making under real-world constraints such as lighting,
-      obstacles, and real-time performance requirements.
-    </p>
-    <p><strong>Tech:</strong> Python, Computer Vision, Machine Learning</p>
-    <a href="https://github.com/tobiascca/Vision-based-Autonomous-Driving-System" target="_blank">View on GitHub →</a>
-  </div>
-
-  <div class="project-card">
-    <h3>Nightly — AI Sleep Analyzer <span class="status-tag">in progress</span></h3>
-    <p>
-      App that analyzes sleep patterns and surfaces personalized insights
-      using machine learning models trained on sleep and activity data.
-    </p>
-    <p><strong>Tech:</strong> Python, Machine Learning, Data Analysis</p>
-    <a href="https://github.com/tobiascca/nightly-AI-sleep-analyzer-app" target="_blank">View on GitHub →</a>
-  </div>
-
-  <div class="project-card">
-    <h3>3D Chess with Hand Tracking</h3>
-    <p>
-      Multiplayer 3D chess controlled entirely by hand gestures — computer
-      vision tracks hand position to move and place pieces, networked
-      across two players in real time.
-    </p>
-    <p><strong>Tech:</strong> Python, OpenCV, MediaPipe, Unity, C#</p>
-    <a href="https://github.com/tobiascca/3D-Chess-with-HandTracking" target="_blank">View on GitHub →</a>
-  </div>
-</section>
-
-<section id="coursework">
-  <h2>Relevant Coursework</h2>
-  <ul class="coursework-list">
-    <li>Machine Learning and Big Data Analysis</li>
-    <li>Computer Vision and Applications</li>
-    <li> NVIDIA Deep Learning Institute Course</li>
-    <li>Data Mining</li>
-    <li>Text Mining</li>
-    <li>Social Networks</li>
-    <li>Database Systems</li>
-    <li>Algorithms and Data Structures</li>
-    <li>Advanced Computer Networks</li>
-    <li>Computer Graphics</li>
-    <li>Embedded Systems</li>
-  </ul>
-</section>
-
-  <footer id="contact">
-    <a href="https://github.com/tobiascca" target="_blank">github.com/tobiascca</a>
-    <p>© 2026 Tobias Anuf</p>
   </footer>
+
+  <script src="main.js" defer></script>
 </body>
+</html>

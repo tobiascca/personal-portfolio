@@ -1,0 +1,191 @@
+%-------------------------
+% Currículum en LaTeX — Tobias Anuf (Español)
+% Template: Jake Gutierrez's resume (MIT), based on sb2nov/resume
+%
+% Build (from the repo root):
+%   tectonic -o . resume/resume_TobiasAnuf_ES.tex
+% or upload to Overleaf and compile with pdfLaTeX.
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{iftex}
+
+\ifPDFTeX
+  \input{glyphtounicode}
+  % Ensure that the generated PDF is machine readable / ATS parsable
+  \pdfgentounicode=1
+\fi
+
+\hypersetup{
+  pdftitle={Tobias Anuf - Currículum},
+  pdfauthor={Tobias Anuf}
+}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------ENCABEZADO----------
+\begin{center}
+    \textbf{\Huge \scshape Tobias Anuf} \\ \vspace{1pt}
+    \small +595 (971) 862-558 $|$
+    \href{mailto:tobiasanuf@gmail.com}{\underline{tobiasanuf@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/tobias-anuf-0003942b2}{\underline{LinkedIn}} $|$
+    \href{https://github.com/tobiascca}{\underline{github.com/tobiascca}} $|$
+    \href{https://tobiascca.github.io/personal-portfolio/}{\underline{tobiascca.github.io/personal-portfolio}}
+\end{center}
+
+%-----------HABILIDADES TÉCNICAS-----------
+\section{Habilidades Técnicas}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Lenguajes de Programación}{: Python, SQL, Java, C/C++, C\#, Swift, JavaScript, HTML/CSS} \\
+     \textbf{ML y Datos}{: scikit-learn, PyTorch, TensorFlow / TF Lite, OpenCV, MediaPipe, Transformers, Pandas, NumPy} \\
+     \textbf{Datos y Herramientas}{: Amazon Redshift, MySQL, MongoDB, Git, Google Cloud Platform, Unity, Raspberry Pi} \\
+     \textbf{Idiomas}{: Español (Nativo), Inglés (Proficiencia / C2)}
+    }}
+ \end{itemize}
+
+%-----------EDUCACIÓN-----------
+\section{Educación}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Universidad Politécnica Taiwán-Paraguay}{Asunción, PY}
+      {Ingeniería en Informática}{Feb. 2023 -- Presente}
+      \resumeItemListStart
+        \resumeItem{\textit{\textbf{Cursos relevantes}: Arquitectura de Computadoras, Sistemas Operativos, Estructuras de Datos y Algoritmos, Redes de Computadoras Avanzadas, Diseño Lógico Digital con Verilog}}
+      \resumeItemListEnd
+    \resumeSubheading
+      {National Taiwan University of Science and Technology (NTUST)}{Taipéi, TW}
+      {Intercambio de 3 semestres}{Feb. 2025 -- Jun. 2026}
+      \resumeItemListStart
+        \resumeItem{\textit{\textbf{Cursos relevantes}: Machine Learning y Análisis de Big Data, Visión por Computadora y Aplicaciones, Minería de Datos, Minería de Texto, Redes Sociales, Sistemas de Bases de Datos, Programación en Java}}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCIA-----------
+\section{Experiencia}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Pasante de Ciencia de Datos}{Ago. 2026 -- Oct. 2026}
+      {Dato Solutions S.A. -- Investigación y Desarrollo}{Asunción, PY}
+      \resumeItemListStart
+        \resumeItem{Desarrollé un sistema de ML que reconstruye el RUC del importador, que los datos abiertos de aduana dejaron de publicar en 2024, recuperando ``quién importa qué'' para el producto de inteligencia comercial}
+        \resumeItem{Comparé cuatro enfoques sobre más de 26M de registros; un modelo TF-IDF + kNN casi duplicó la precisión top-1 del baseline de reglas (29\% $\rightarrow$ 57\%) y alcanzó 65\% top-1 / 80\% top-5 al escalar los datos}
+        \resumeItem{Definí un umbral de confianza calibrado (60\% de los despachos con 86,5\% de precisión), validé los totales contra la estadística del Banco Central del Paraguay y construí un pipeline por lotes reanudable en Python + Redshift}
+        \resumeItem{Corregí errores de cálculo del asistente de consultas con LLM de la empresa, reescribí sus instrucciones y desarrollé una batería automatizada de validación (invariantes + deriva) que se ejecuta periódicamente}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROYECTOS-----------
+\section{Proyectos}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/tobiascca/Vision-based-Autonomous-Driving-System}{Sistema de Conducción Autónoma por Visión}} $|$ \emph{Python, OpenCV, TF Lite, Raspberry Pi}}{Jun. 2025 -- Presente}
+          \resumeItemListStart
+            \resumeItem{Construí un auto RC con Raspberry Pi que sigue las líneas del carril en tiempo real mediante un pipeline de detección de carriles en OpenCV y un controlador de dirección tipo PID}
+            \resumeItem{Entrené un detector liviano TF Lite (Edge Impulse FOMO) de señales de pare y semáforos que anula la dirección para frenar o detenerse}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/tobiascca/3D-Chess-with-HandTracking}{Ajedrez 3D Multijugador por Gestos}} $|$ \emph{Python, MediaPipe, Unity, C\#}}{Abr. 2026 -- May. 2026}
+          \resumeItemListStart
+            \resumeItem{Juego de ajedrez en línea controlado con gestos: MediaPipe sigue el pulgar como cursor y un pellizco mueve las piezas; Python envía el seguimiento a Unity por TCP y Mirror sincroniza a dos jugadores}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/tobiascca/nightly-AI-sleep-analyzer-app}{Nightly -- Analizador de Sueño On-device}} $|$ \emph{Swift, SwiftUI, SwiftData, HealthKit}}{Jul. 2026 -- Presente}
+          \resumeItemListStart
+            \resumeItem{App iOS privada que graba sonidos durante la noche, transcribe el habla en el dispositivo y sincroniza con Apple Health}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Aplicación Web de Chat} $|$ \emph{Python, MySQL, MongoDB}}{Jun. 2025}
+          \resumeItemListStart
+            \resumeItem{Chat web en tiempo real para el curso de Sistemas de Bases de Datos; diseñé el esquema SQL y comparé el almacenamiento en MySQL y MongoDB}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------CURSOS Y CERTIFICACIONES-----------
+\section{Cursos y Certificaciones}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Certificados NVIDIA DLI} $|$ \emph{\href{https://learn.nvidia.com/certificates?id=1tO0Ys3ITkGJkXM3sgBKrQ}{\underline{Fundamentos de Deep Learning}}, \href{https://learn.nvidia.com/certificates?id=g-2IIRd1RO6ZWcYuaAXLtA}{\underline{Prompts para LLMs}}, Agentes RAG}}{Oct. -- Nov. 2025}
+    \resumeProjectHeading
+      {\textbf{Introducción a la Ciencia de Datos}, Penguin Academy $|$ \emph{Pandas, TensorFlow, Keras, PyTorch}}{Ago. 2024}
+  \resumeSubHeadingListEnd
+
+\end{document}
